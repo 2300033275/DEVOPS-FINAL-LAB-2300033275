@@ -11,7 +11,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   backend:
-    image: 2300030072/2300030072-final-backend:latest
+    image: 2300033275/2300033275-final-backend:latest
     container_name: springboot
     ports:
       - "30032:2000"
@@ -20,7 +20,7 @@ services:
     restart: on-failure
 
   frontend:
-    image: 2300030072/2300030072-final-frontend:latest
+    image: 2300033275/2300033275-final-frontend:latest
     container_name: react
     ports:
       - "30031:80"
